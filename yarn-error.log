@@ -1,0 +1,59 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn version
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  10.1.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:131036:13)
+      at Interface.emit (events.js:182:13)
+      at Interface._ttyWrite (readline.js:778:16)
+      at ReadStream.onkeypress (readline.js:163:10)
+      at ReadStream.emit (events.js:182:13)
+      at emitKeys (internal/readline.js:422:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1014:36)
+      at ReadStream.emit (events.js:182:13)
+      at addChunk (_stream_readable.js:277:12)
+
+npm manifest: 
+  {
+    "name": "bar-graph-d3",
+    "version": "1.0.0",
+    "description": "Bar Graph with D3",
+    "main": "server.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "nodemon server.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://hcuffy@github.com/hcuffy/bar-graph-D3.git"
+    },
+    "author": "Henry Cuffy",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/hcuffy/bar-graph-D3/issues"
+    },
+    "homepage": "https://github.com/hcuffy/bar-graph-D3#readme",
+    "devDependencies": {},
+    "dependencies": {
+      "express": "^4.16.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,17 @@
+body {
+  background-color: #99d6ff;
+}
+
+#title {
+  text-align: center;
+  margin: auto;
+}
+
+#tooltip {
+  padding: 5px 5px 5px 5px;
+  position: absolute;
+  text-align: left;
+  font-size: 15px;
+  color: : #000000;
+  background: #ffffff;
+}

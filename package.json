@@ -1,0 +1,24 @@
+{
+  "name": "bar-graph-d3",
+  "version": "1.0.0",
+  "description": "Bar Graph with D3",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://hcuffy@github.com/hcuffy/bar-graph-D3.git"
+  },
+  "author": "Henry Cuffy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hcuffy/bar-graph-D3/issues"
+  },
+  "homepage": "https://github.com/hcuffy/bar-graph-D3#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
