@@ -4,7 +4,7 @@ $(document).ready(function() {
 		function(data) {
 			const dataset = data.data;
 
-			const w = 1000;
+			const w = 800;
 			const h = 500;
 			const padding = 20;
 			var tempColor;
@@ -36,8 +36,7 @@ $(document).ready(function() {
 			var tooltip = d3
 				.select('body')
 				.append('div')
-				.attr('id', 'tooltip')
-				.style('opacity', 0);
+				.attr('id', 'tooltip');
 
 			svg
 				.selectAll('rect')
@@ -45,6 +44,8 @@ $(document).ready(function() {
 				.enter()
 				.append('rect')
 				.attr('class', 'bar')
+				.attr('data-date', d => d[0])
+				.attr('data-gdp', d => d[1])
 				.attr('x', d => xScale(new Date(d[0])))
 				.attr('y', d => yScale(d[1]))
 				.attr('width', 2)
@@ -56,7 +57,8 @@ $(document).ready(function() {
 						.style('opacity', 1)
 						.style('visibility', 'visible');
 					tooltip
-						.html('GDP: $' + d[1] + ' ' + '<br>' + 'Date: ' + d[0])
+						.html('GDP: $' + d[1] + ' Billion' + '<br>' + 'Date: ' + d[0])
+						.attr('data-date', d[0])
 						.style('left', d3.event.pageX + 30 + 'px')
 						.style('top', event.pageY + -30 + 'px');
 				});
